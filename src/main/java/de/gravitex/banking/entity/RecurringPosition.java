@@ -13,7 +13,7 @@ import lombok.Data;
 public class RecurringPosition extends IdEntity {
 
 	@Column(nullable = false)
-	private boolean incoming;
+	private Boolean incoming = true;
 	
 	@Enumerated(EnumType.STRING)
 	@Column(nullable = false)

@@ -14,5 +14,5 @@ public class IdEntity extends NoIdEntity {
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seq_name")
 	@SequenceGenerator(name = "seq_name", sequenceName = "booking_id_seq", allocationSize = 1)
-	private Long id;
+	protected Long id;	
 }
