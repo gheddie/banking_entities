@@ -59,4 +59,9 @@ public class Booking extends IdEntity {
 	@Transient
 	@EnableEdit(type = EditType.NEVER)
 	private String tradingPartnerKey;
+	
+	@Override
+	public String toString() {
+		return amount + " [" + tradingPartner.getTradingKey() + "] ("+bookingDate+")";
+	}
 }
